@@ -1,3 +1,11 @@
-h1 {
-    color: red;
+body {
+    background-color: #FFFDF2;
+}
+
+.icon {
+    color: #5A2F99;
+}
+
+.copyright {
+    color: #5A2F99;
 }

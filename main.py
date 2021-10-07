@@ -1,19 +1,13 @@
 from flask import Flask, render_template
-from flask_bootstrap import Bootstrap
+import datetime
 
-
-def create_app():
-    app = Flask(__name__)
-    Bootstrap(app)
-    return app
-
-
-app = create_app()
+app = Flask(__name__)
 
 
 @app.route('/')
 def main():
-    return render_template("index.html")
+    year = datetime.datetime.today().year
+    return render_template("index.html", year=year)
 
 
 if __name__ == "__main__":
