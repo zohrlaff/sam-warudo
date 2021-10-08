@@ -2,10 +2,51 @@ body {
     background-color: #FFFDF2;
 }
 
+h1 {
+    font-size: 300%;
+    color: #20014D;
+}
+
+h3 {
+    color: #5A2F99;
+}
+
+
+.nav {
+    margin-right: 1%;
+}
+
+
 .icon {
     color: #5A2F99;
 }
 
-.copyright {
+.profile {
+    margin: 5%;
+}
+
+.headshot {
+  display: block;
+  width: 17%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  border: 10px solid #5A2F99;
+  border-radius: 30px;
+}
+
+.bio {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
     color: #5A2F99;
+    text-align: center;
+    font-size: .75rem;
 }

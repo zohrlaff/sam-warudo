@@ -1,6 +1,5 @@
 {% include "header.html" %}
 
-<!-- Nav -->
 <ul class="nav justify-content-end">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="{{ url_for('projects') }}"><i class="fas fa-code icon"></i></a>
@@ -9,17 +8,19 @@
     <a class="nav-link" href="https://github.com/zohrlaff" target="_blank" rel="noopener noreferrer"><i class="fab fa-github icon"></i></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ url_for('contact') }}"><i class="far fa-envelope icon"></i></a>
+    <a class="nav-link active" aria-current="page" href="{{ url_for('main') }}"><i class="fas fa-home icon"></i></a>
   </li>
 </ul>
 
+<h1>CONTACT ME</h1>
 
-<!-- Profile -->
-<div class="profile">
-  <img src="{{ url_for('static', filename='images/me_round.png') }}" alt="Samuel Reyes" class="headshot">
-  <h1 class="bio">Samuel Reyes</h1>
-  <h3 class="bio">Here comes a new Challenger! It's me, Samuel Reyes.</h3>
-</div>
+<form method="POST">
+  {{ form.csrf_token }}
+  {{ form.name.label }} {{ form.name(size=20) }}
+  {{ form.email.label }} {{ form.email(size=20) }}
+  {{ form.message.label }} {{ form.message(size=20) }}
+  {{ form.submit }}
+</form>
 
 <div class="footer">
   {% include "footer.html" %}
