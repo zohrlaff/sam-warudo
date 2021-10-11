@@ -1,4 +1,8 @@
 {% include "header.html" %}
+{% from 'bootstrap/form.html' import render_form %}
+{% from 'bootstrap/utils.html' import render_messages %}
+
+
 
 <ul class="nav justify-content-end">
   <li class="nav-item">
@@ -12,15 +16,20 @@
   </li>
 </ul>
 
-<h1>CONTACT ME</h1>
+<h4 class="bio">Get In Contact</h4>
 
-<form method="POST">
-  {{ form.csrf_token }}
-  {{ form.name.label }} {{ form.name(size=20) }}
-  {{ form.email.label }} {{ form.email(size=20) }}
-  {{ form.message.label }} {{ form.message(size=20) }}
-  {{ form.submit }}
-</form>
+<div class="form-group contact-form">
+  {{ render_form(form, action="/contact", method="POST") }}
+  <hr>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <p class="alert alert-success" id="alert">{{ message }}</p>
+    {% endfor %}
+    {% endif %}
+  {% endwith %}
+</div>
+
 
 <div class="footer">
   {% include "footer.html" %}

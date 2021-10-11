@@ -7,10 +7,9 @@ h1 {
     color: #20014D;
 }
 
-h3 {
+h3, h4 {
     color: #5A2F99;
 }
-
 
 .nav {
     margin-right: 1%;
@@ -49,4 +48,12 @@ h3 {
     color: #5A2F99;
     text-align: center;
     font-size: .75rem;
+}
+
+.contact-form {
+  margin: 3% 35%;
+}
+
+#alert {
+    text-align: center;
 }
