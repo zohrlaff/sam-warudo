@@ -17,9 +17,7 @@ class ContactForm(FlaskForm):
 year = datetime.datetime.today().year
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
-# Form button customization
-app.config['BOOTSTRAP_BTN_STYLE'] = 'dark'
-app.config['BOOTSTRAP_BTN_SIZE'] = 'block'
+
 
 # TODO 1. Move this to sys/os before deploying
 app.secret_key = "pG^9KsXeg!LS9l*7s%Y8v90@N7wbIKoh"

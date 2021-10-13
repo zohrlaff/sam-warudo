@@ -1,14 +1,17 @@
 body {
-    background-color: #FFFDF2;
+    background-color: #FFFEF2;
+    font-family: 'Questrial', sans-serif;
 }
 
 h1 {
     font-size: 300%;
-    color: #20014D;
+    color: #5A2F99;
+    font-family: 'Oxygen', sans-serif;
 }
 
-h3, h4 {
-    color: #5A2F99;
+h3 {
+    color: #9286B3;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .nav {
@@ -30,7 +33,7 @@ h3, h4 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2%;
-  border: 10px solid #5A2F99;
+  border: 10px solid #AD98B3;
   border-radius: 30px;
 }
 
@@ -45,13 +48,28 @@ h3, h4 {
     bottom: 0;
     width: 100%;
     margin: auto;
-    color: #5A2F99;
+    color: #ADB6CC;
     text-align: center;
-    font-size: .75rem;
+    font-size: .7rem;
+}
+
+.container {
+    margin: 3% auto;
+    text-align: center;
+}
+
+.project-icon {
+    width: 75%;
+    border: 10px solid #AD98B3;
+    border-radius: 30px;
+    padding: 5%;
+    margin: 2%;
 }
 
 .contact-form {
   margin: 3% 35%;
+  color: #5A2F99;
+  font-size: 1.2rem;
 }
 
 #alert {

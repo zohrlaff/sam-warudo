@@ -16,10 +16,10 @@
   </li>
 </ul>
 
-<h4 class="bio">Get In Contact</h4>
+<h1 class="bio">Get In Contact</h1>
 
 <div class="form-group contact-form">
-  {{ render_form(form, action="/contact", method="POST") }}
+  {{ render_form(form, action="/contact", method="POST", button_style="dark", button_size="block") }}
   <hr>
   {% with messages = get_flashed_messages() %}
   {% if messages %}
