@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, flash
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, TextAreaField
+from wtforms import StringField, TextAreaField, SubmitField
 from wtforms.validators import Length, DataRequired, Email
 import datetime
 import smtplib
